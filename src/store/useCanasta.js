@@ -23,4 +23,8 @@ export const useCanasta = create((set) => ({
       .filter((item) => item.id !== id || item.cantidad > 1)
       .map((item) => item.id === id ? { ...item, cantidad: item.cantidad - 1 } : item),
   })),
+  // Elimina todas las unidades del producto elegido.
+  eliminar: (id) => set(({ productos }) => ({
+    productos: productos.filter((producto) => producto.id !== id),
+  })),
 }));

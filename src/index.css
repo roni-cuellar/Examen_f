@@ -36,6 +36,17 @@ nav {
   margin: 4px 12px;
 }
 
+/* Separa los productos de la canasta con una línea. */
+.lista-canasta {
+  list-style: none;
+  padding: 0;
+}
+
+.lista-canasta li {
+  border-bottom: 1px solid #ddd;
+  padding: 12px;
+}
+
 .panel-compras {
   margin: 16px 0;
   padding: 16px;
