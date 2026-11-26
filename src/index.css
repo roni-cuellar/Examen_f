@@ -18,8 +18,19 @@ nav button {
   margin: 4px;
   padding: 8px 12px;
   cursor: pointer;
+  color: white;
 }
 
+
+.inicio {
+  padding: 24px;
+  text-align: center;
+}
+
+.inicio a {
+  color: #23623d;
+  font-weight: bold;
+}
 
 .producto-card {
   max-width: 320px;
@@ -43,4 +54,21 @@ nav button {
 .producto-card-precio {
   color: #23623d;
   font-weight: bold;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: white;
+  color: rgb(0, 0, 0);
+  line-height: 1.5;
+}
+
+button {
+  background-color: #23623d;
+  border: 1px solid #aaa;
+  border-radius: 8px;
+  margin: 4px;
+  padding: 8px 12px;
+  cursor: pointer;
+  color: white;
 }
