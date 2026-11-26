@@ -1,18 +1,16 @@
-import { useNavigate, useLocation } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
-  const navigate = useNavigate(); // Devuelve una función para cambiar la URL.
-    return (
-        <nav >
-                <button onClick={()=>navigate('/')}>Inicio</button>
+  const navigate = useNavigate();
 
-                <button onClick={()=>navigate('/Vitrina')}>Vitrina</button>
-
-                <button onClick={()=>navigate('/Canasta')}>Mi canasta</button>
-
-                <button onClick={()=>navigate('/Pedido')}>Mi pedido</button>
-        </nav>
-    );
+  return (
+    <nav>
+      <button type="button" onClick={() => navigate('/')}>Inicio</button>
+      <button type="button" onClick={() => navigate('/vitrina')}>Vitrina</button>
+      <button type="button" onClick={() => navigate('/mi-canasta')}>Mi canasta</button>
+      <button type="button" onClick={() => navigate('/mi-pedido')}>Mi pedido</button>
+    </nav>
+  );
 }
 
 export default Navbar;
