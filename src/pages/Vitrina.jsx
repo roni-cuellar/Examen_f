@@ -12,7 +12,7 @@ function Vitrina() {
     }, []);
 
     return (
-        <section>
+        <section className="vitrina">
         {productos.map((producto) => (
             <ProductoCard 
             key={producto.id} 

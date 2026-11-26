@@ -1,8 +1,9 @@
 function Pedido() {
     return (
-        <div>
-            <h1>mipedido....</h1>
-        </div>
+        <section className="panel-compras">
+            <h2>Mi pedido</h2>
+            <p>Aún no tienes un pedido.</p>
+        </section>
     )
 }
 

@@ -7,8 +7,8 @@ function Navbar() {
     <nav>
       <button type="button" onClick={() => navigate('/')}>Inicio</button>
       <button type="button" onClick={() => navigate('/vitrina')}>Vitrina</button>
-      <button type="button" onClick={() => navigate('/mi-canasta')}>Mi canasta</button>
-      <button type="button" onClick={() => navigate('/mi-pedido')}>Mi pedido</button>
+      <button type="button" onClick={() => navigate('/misCompras/canasta')}>Mi canasta</button>
+      <button type="button" onClick={() => navigate('/misCompras/pedido')}>Mi pedido</button>
     </nav>
   );
 }

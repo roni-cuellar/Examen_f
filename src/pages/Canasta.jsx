@@ -1,8 +1,9 @@
 function Canasta() {
     return (
-        <div>
-                <h1>canasta....</h1>
-        </div>
+        <section className="panel-compras">
+            <h2>Mi canasta</h2>
+            <p>Tu canasta está vacía.</p>
+        </section>
     )
 }
 
