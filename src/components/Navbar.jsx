@@ -1,15 +1,36 @@
-import { useNavigate } from 'react-router-dom';
+import { useEffect, useState } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
+
+const enlaces = [
+  { ruta: '/', texto: 'Inicio' },
+  { ruta: '/vitrina', texto: 'Vitrina' },
+  { ruta: '/misCompras/canasta', texto: 'Mi canasta' },
+  { ruta: '/misCompras/pedido', texto: 'Mi pedido' },
+];
 
 function Navbar() {
   // Cada botón usa navigate para abrir su página.
   const navigate = useNavigate();
+  const { pathname } = useLocation();
+  const [rutaActiva, setRutaActiva] = useState(pathname);
+
+  useEffect(() => {
+    setRutaActiva(pathname);
+  }, [pathname]);
 
   return (
     <nav>
-      <button type="button" onClick={() => navigate('/')}>Inicio</button>
-      <button type="button" onClick={() => navigate('/vitrina')}>Vitrina</button>
-      <button type="button" onClick={() => navigate('/misCompras/canasta')}>Mi canasta</button>
-      <button type="button" onClick={() => navigate('/misCompras/pedido')}>Mi pedido</button>
+      {enlaces.map(({ ruta, texto }) => {
+        const activa = rutaActiva === ruta ||
+          (rutaActiva === '/misCompras' && ruta === '/misCompras/canasta');
+
+        return (
+          <button key={ruta} type="button" className="boton-enlace"
+            aria-current={activa ? 'page' : undefined} onClick={() => navigate(ruta)}>
+            {texto}
+          </button>
+        );
+      })}
     </nav>
   );
 }

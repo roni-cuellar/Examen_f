@@ -12,17 +12,6 @@ nav {
   text-align: center;
 }
 
-nav button {
-  background-color: #23623d;
-  border: 1px solid #aaa;
-  border-radius: 8px;
-  margin: 4px;
-  padding: 8px 12px;
-  cursor: pointer;
-  color: white;
-}
-
-
 /* Estilos de Inicio y Mis compras. */
 .inicio {
   padding: 24px;
@@ -45,10 +34,6 @@ nav button {
 .mis-compras nav li {
   display: inline-block;
   margin: 4px 12px;
-}
-
-.mis-compras nav a {
-  color: white;
 }
 
 .panel-compras {
@@ -105,7 +90,8 @@ body {
   line-height: 1.5;
 }
 
-button {
+button,
+.boton-enlace {
   background-color: #23623d;
   border: 1px solid #aaa;
   border-radius: 8px;
@@ -113,4 +99,16 @@ button {
   padding: 8px 12px;
   cursor: pointer;
   color: white;
+}
+
+.boton-enlace {
+  display: inline-block;
+  font: inherit;
+  text-decoration: none;
+}
+
+.boton-enlace[aria-current="page"] {
+  background-color: #f5d36a;
+  border-color: #f5d36a;
+  color: #203322;
 }

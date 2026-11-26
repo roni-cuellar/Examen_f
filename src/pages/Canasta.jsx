@@ -18,7 +18,7 @@ function Canasta() {
                         {productos.map((producto) => (
                             <li key={producto.id}>
                                 {producto.title} · {producto.cantidad} × ${producto.price.toFixed(2)}{' '}
-                                <button type="button" onClick={() => quitar(producto.id)}>Quitar una unidad</button>
+                                <button type="button" onClick={() => quitar(producto.id)}>Quitar uno</button>
                             </li>
                         ))}
                     </ul>

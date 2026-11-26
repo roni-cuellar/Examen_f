@@ -5,6 +5,7 @@ import MisCompras from './pages/MisCompras.jsx';
 import Canasta from './pages/Canasta.jsx';
 import Pedido from './pages/Pedido.jsx';
 import Vitrina from './pages/Vitrina.jsx';
+import SeccionVitrina from './pages/SeccionVitrina.jsx';
 
 function App() {
   return (
@@ -13,7 +14,10 @@ function App() {
       <Route path="/" element={<Layout />}>
         {/* Inicio se muestra al abrir la ruta /. */}
         <Route index element={<Inicio />} />
-        <Route path="vitrina" element={<Vitrina />} />
+        <Route path="vitrina" element={<SeccionVitrina />}>
+          {/* La lista con Axios sigue abriendo en /vitrina. */}
+          <Route index element={<Vitrina />} />
+        </Route>
 
         <Route path="misCompras" element={<MisCompras />}>
 
