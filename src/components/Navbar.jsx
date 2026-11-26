@@ -1,6 +1,7 @@
 import { useNavigate } from 'react-router-dom';
 
 function Navbar() {
+  // Cada botón usa navigate para abrir su página.
   const navigate = useNavigate();
 
   return (

@@ -1,3 +1,4 @@
+// Mensaje que se muestra mientras la pajina solo tiene su vista inicial.
 function Pedido() {
     return (
         <section className="panel-compras">

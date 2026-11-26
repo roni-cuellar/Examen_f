@@ -9,6 +9,7 @@ function Layout() {
       <Header />
       <Navbar />
       <main>
+        {/* Aquí aparece la página que corresponde a la direccion URL */}
         <Outlet />
       </main>
       <Footer />

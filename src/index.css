@@ -1,5 +1,6 @@
+/* Colores y espacios del encabezado, el pie y el menú. */
 header,footer {
-  background-color: #23623d;
+  background-color:#025606;
   color: white;
   padding: 12px;
   text-align: center;
@@ -22,6 +23,7 @@ nav button {
 }
 
 
+/* Estilos de Inicio y Mis compras. */
 .inicio {
   padding: 24px;
   text-align: center;
@@ -56,6 +58,7 @@ nav button {
   border-radius: 8px;
 }
 
+/* Las tarjetas pasan a otra fila cuando se acaba el espacio. */
 .vitrina {
   display: flex;
   flex-wrap: wrap;
@@ -69,6 +72,7 @@ nav button {
   margin: 0;
 }
 
+/* Borde, imagen y texto de cada tarjeta. */
 .producto-card {
   max-width: 320px;
   margin: 16px auto;
@@ -93,6 +97,7 @@ nav button {
   font-weight: bold;
 }
 
+/* Letra y botones de toda la aplicación. */
 body {
   font-family: Arial, sans-serif;
   background-color: white;
